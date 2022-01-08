@@ -2,14 +2,14 @@
 
 FCC Projects:
 
-> Back End Development and APIs:
+> Back End Development And APIs:
   - Timestamp Microservice
   - Request Header Parser Microservice
   - URL Shortener Microservice
   - Exercise Tracker
   - File Metadata Microservice
   
-> Quality Assurance Certification
+> Quality Assurance
   - Metric-Imperial Converter
   - Issue Tracker
   - Personal Library
