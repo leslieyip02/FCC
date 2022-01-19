@@ -1,0 +1,88 @@
+@import url('https://fonts.googleapis.com/css2?family=Major+Mono+Display&display=swap');
+
+body {
+  color: #0f380f;
+  width: fit-content;
+  height: fit-content;
+  position: absolute;
+  margin-left: auto;
+  margin-right: auto;
+  left: 0;
+  right: 0;
+  background-color: #9bbc0f;
+}
+
+h1 {
+  font-family: 'Major Mono Display';
+  width: fit-content;
+  height: fit-content;
+  font-size: 3em;
+  margin: 0.5em auto 0.5em auto;
+  border-bottom: 2px solid #306230;
+}
+
+#container {
+  width: 1200px;
+  height: 480px;
+  margin: auto;
+}
+
+svg {
+  margin: auto;
+}
+
+.point {
+  position: relative;
+}
+
+.point:hover {
+  stroke-width: 5px;
+}
+
+.line:hover {
+  stroke: #d4f255;
+  stroke-width: 3px;
+  opacity: 0.8;
+}
+
+#tooltip {
+  position: absolute;
+  font-family: monospace;
+  width: max-content;
+  height: fit-content;
+  padding: 10px;
+  color: #9bbc0f;
+  background-color: #306230;
+  border: 2px solid #8bac0f;
+  border-radius: 5px;
+  z-index: 10;
+}
+
+#symbol-form {
+  display: flex;
+  width: fit-content;
+  margin: 0.5em auto 0.5em auto;
+}
+
+#symbol, #timeframe, #submit {
+  margin: 0.25em;
+}
+
+.remove-symbol {
+  position: absolute;
+  left: 1150px;
+  font-family: monospace;
+  width: fit-content;
+  height: fit-content;
+  color: #9bbc0f;
+  background-color: #306230;
+  border: 2px solid #8bac0f;
+  border-radius: 5px;
+}
+
+.remove-symbol:hover {
+  color: #dd5c5c;
+  background-color: #991111;
+  border: 2px solid #dd5c5c;
+  z-index: 10;
+}
