@@ -1,0 +1,147 @@
+@import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');
+
+body {
+  background-color: #e6e6e6;
+}
+
+.container {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 95%;
+  display: grid;
+  grid-template-columns: 1fr 3fr 1fr;
+  grid-template-rows: 7fr 1fr;
+  align-items: center;
+  grid-column-gap: 12px;
+}
+
+.dpad {
+  margin: auto;
+  display: grid;
+  grid-template-rows: 56px 56px 56px;
+  grid-template-columns: 56px 56px 56px;
+  grid-template-areas:
+    ". w ."
+    "a o d"
+    ". s .";
+}
+.dpad__button {
+  background-color: #242424;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.dpad__up {
+  grid-area: w;
+  border-radius: 12px 12px 0 0;
+}
+.dpad__left {
+  grid-area: a;
+  border-radius: 12px 0 0 12px;
+}
+.dpad__down {
+  grid-area: s;
+  border-radius: 0 0 12px 12px;
+}
+.dpad__right {
+  grid-area: d;
+  border-radius: 0 12px 12px 0;
+}
+.dpad__neutral {
+  grid-area: o;
+  background-color: #242424;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.dpad__center {
+  margin: auto;
+  width: 36px;
+  height: 36px;
+  background-color: #303030;
+  border-radius: 50%;
+}
+.dpad__caret {
+  font-size: 48px;
+  color: #3a3a3a;
+}
+.dpad__button:hover {
+  opacity: 0.8;
+  border: 2px solid #e6e6e6;
+}
+
+.game-window {
+  border-width: 48px 64px;
+  border-radius: 12px 12px 36px 12px;
+  border-style: solid;
+  border-color: #aaaaaa;
+}
+
+.buttons__side {
+  margin: auto;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+.buttons--red {
+  margin: 12px;
+  width: 64px;
+  height: 64px;
+  background-color: #cc0000;
+  border-radius: 50%;
+  border: 5px solid #242424;
+}
+.buttons__a {
+  transform: translateY(-24px); 
+}
+.buttons__b {
+  transform: translateY(24px); 
+}
+.buttons__bottom {
+  grid-column: 2;
+  margin: auto;
+  width: 320px;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+.buttons--grey {
+  width: 72px;
+  height: 16px;
+  background-color: #aaaaaa;
+  border-radius: 16px;
+  border: 3px solid #242424;
+  display: flex;
+  justify-content: center;
+}
+.buttons__select {
+  
+}
+.buttons__start {
+  
+}
+.buttons__label {
+  margin: auto;
+  color: #000064;
+  font-size: 16px;
+  font-family: 'Press Start 2P';
+  text-align: center;
+}
+.buttons__label--slanted {
+  transform: translate(24px, 96px) rotate(-30deg);
+}
+.buttons__label--bottom {
+  transform: translate(2px, 32px);
+}
+.buttons--red:hover {
+  background-color: #ff0000;
+}
+.buttons--grey:hover {
+  background-color: #bbbbbb;
+}
+
+/* @media (min-width: 800px) {
+
+} */

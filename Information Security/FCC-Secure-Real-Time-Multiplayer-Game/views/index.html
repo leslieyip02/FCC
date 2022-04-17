@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Secure Real-Time Multiplayer Game</title>
+    <meta
+      name="description"
+      content="An example for the fCC InfoSec Secure Real-Time Multiplayer Game project"
+    />
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="../public/style.css" type="text/css" />
+    <link href="https://fonts.googleapis.com/css?family=Press+Start+2P&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/333fd59b62.js" crossorigin="anonymous"></script>
+    <script src="/socket.io/socket.io.js"></script>
+    <script src="../public/game.mjs" type="module" defer></script>
+  </head>
+  
+  <body>    
+    <div class="container">
+      <div class="dpad">
+        <div class="dpad__button dpad__up">
+          <i class="fa-solid fa-caret-up dpad__caret"></i>
+        </div>
+        <div class="dpad__button dpad__left">
+          <i class="fa-solid fa-caret-left dpad__caret"></i>
+        </div>
+        <div class="dpad__button dpad__down">
+          <i class="fa-solid fa-caret-down dpad__caret"></i>
+        </div>
+        <div class="dpad__button dpad__right">
+          <i class="fa-solid fa-caret-right dpad__caret"></i>
+        </div>
+        <div class="dpad__neutral">
+          <div class="dpad__center"></div>
+        </div>
+      </div>
+      
+      <canvas 
+        ref="game"
+        id="game-window" 
+        class="game-window"
+        width="800" 
+        height="480"
+      ></canvas>
+
+      <div class="buttons__side">
+        <div class="buttons__b buttons--red">
+          <p class="buttons__label buttons__label--slanted">B</p>
+        </div>
+        <div class="buttons__a buttons--red">
+          <p class="buttons__label buttons__label--slanted">A</p>
+        </div>
+      </div>
+      <div class="buttons__bottom">
+        <div class="buttons__select buttons--grey">
+          <p class="buttons__label buttons__label--bottom">SELECT</p>
+        </div>
+        <div class="buttons__start buttons--grey">
+          <p class="buttons__label buttons__label--bottom">START</p>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
